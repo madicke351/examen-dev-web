@@ -1,0 +1,32 @@
+Blog\BlogBundle\Entity\user:
+    type: entity
+    table: null
+    repositoryClass: Blog\BlogBundle\Repository\userRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        sexe:
+            type: string
+            length: 255
+        age:
+            type: string
+            length: 255
+        datenais:
+            type: datetime
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

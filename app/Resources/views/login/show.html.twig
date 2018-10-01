@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Login</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ login.id }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ login.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ login.nom }}</td>
+            </tr>
+            <tr>
+                <th>Sexe</th>
+                <td>{{ login.sexe }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ login.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ login.email }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ login.password }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('login_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('login_edit', { 'id': login.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

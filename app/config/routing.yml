@@ -1,0 +1,14 @@
+blog_login:
+    resource: "@BlogBundle/Controller/loginController.php"
+    type:     annotation
+
+blog:
+    resource: "@BlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+
+    

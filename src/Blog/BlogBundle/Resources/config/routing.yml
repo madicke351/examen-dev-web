@@ -1,0 +1,22 @@
+blog_homepage:
+    path:     /
+    defaults: { _controller: BlogBundle:Default:index }
+
+
+loger:
+    path:     /loger
+    defaults: { _controller: BlogBundle:Default:loger }
+
+
+
+inscrire:
+    path:     /inscrire
+    defaults: { _controller: BlogBundle:Default:inscrire }
+
+
+
+mesarticle:
+    path:     /mesarticle
+    defaults: { _controller: BlogBundle:Default:mesarticle }
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>bloc</title>
+    <!-- Bootstrap CSS -->    
+
+
+ 
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Normalize Style -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <!-- Color Switcher -->
+    <link rel="stylesheet" href="assets/css/color-switcher.css" type="text/css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/extras/animate.css" type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/extras/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/extras/owl.theme.css" type="text/css">
+    <!-- Rev Slider Css -->
+    <link rel="stylesheet" href="assets/extras/settings.css" type="text/css">
+    <!-- Nivo Lightbox Css -->
+    <link rel="stylesheet" href="assets/extras/nivo-lightbox.css" type="text/css">
+    <!-- Slicknav Css -->
+    <link rel="stylesheet" href="assets/css/slicknav.css" type="text/css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/sky.css" media="screen" />
+
+
+
+
+  </head>
+
+
+<style type="text/css">
+  #ab:hover{cursor: pointer;}
+
+
+</style>
+
+
+
+  <body style="background: url('') no-repeat; background-size: cover;">
+    
+  
+    <!-- Header area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Roof area Starts -->
+      <div id="roof" class="hidden-xs">
+          <div class="container">
+              <!-- Wellcome Starts -->
+              <div class="pull-left">
+                <i class="fa fa-map-o" aria-hidden="true"></i> TDSI_UCAD
+              </div>
+              <!-- Wellcome End -->
+
+              <!-- Quick Contacts Starts -->
+              <div class="quick-contacts pull-right">
+                  <span><i class="fa fa-phone"></i> +221 771958743</span>
+                  <span><i class="fa fa-envelope"></i><a href="#">bloctdsi@ucad.edu</a></span>
+                  <span><a href="login.php"><i class="fa fa-user"></i> Login</a> / <a href="index.php">Deconnecter</a></span>
+              </div>
+              <!-- Quick Contacts End -->
+          </div>
+      </div>
+      <!-- Roof area End -->
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-default main-navigation" role="navigation" data-spy="affix" data-offset-top="50">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <!-- Brand End -->
+
+            <!-- Search Icon -->
+            <div class="header-search pull-right">
+                <a class="open-search">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>  
+            <!-- Collapse Navbar -->
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown dropdown-toggle">
+                  <a class="active" href="index.php" data-toggle="dropdown">Acceuil <i class="fa fa-angle-down"></i></a>
+                                  
+                </li>
+                <li class="dropdown dropdown-toggle">
+                  <a href="mesarticle">Mes articles <i class="fa fa-angle-down"></i></a>
+                             
+                </li>
+                <li class="dropdown dropdown-toggle">
+                <li class="dropdown dropdown-toggle">
+                  <a href="liste_article.php" >Liste article <i class="fa fa-angle-down"></i></a>
+
+                          
+                </li> 
+               
+              </ul>
+            </div>  
+             <!-- Form for navbar search area -->
+            <form class="full-search">
+              <div class="container">
+                <div class="row">
+                  <input class="form-control" type="text" placeholder="Search">
+                  <a class="close-search">
+                  <span class="fa fa-times">
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </form>
+            <!-- Search form ends -->   
+
+            <!-- Mobile Menu Start -->
+           
+                        
+            </ul>
+            <!-- Mobile Menu End -->
+
+          </div>
+      </nav>
+      <!-- Navbar End -->
+
+
+
+
+
+
+    </header>
+   
+ <!-- Header area wrapper End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="page-title">BLOG TDSI</h2>
+              <a href="index.php">ACCEUIL</a>
+              <span>/</span>
+              <span class="current">LOGIN </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+
+
+
+
+ <center>
+
+  <div class="card">
+     <img src="images/8.jpg" id ="login" class="card-img-top">
+    <div class="card-body">
+
+   <form class="form-group" action="action/loginAction.php" method="post">  
+    <div class="col-xs-10 col-md-10">
+         <label>email :</label><br>
+         <input type="text" name="email" style="width: 30%;" class="form-control" placeholder="Enter votre email"><br>      
+
+          <label>password:</label><br>
+         <input type="password" name="password" style="width: 30%;" class="form-control" placeholder="Enter votre password"><br>
+
+           <input type="submit" name="se connecter"  value="se connecter" id="ab" class="btn btn-primary"> si vous n'avez pas de compte<a href="inscrire"> inscrire ici</a> 
+</div>
+
+      
+   </form>
+</div>
+
+
+</center>
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery  -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/color-switcher.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script type="text/javascript" src="assets/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown.js"></script>  
+    <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>   
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="assets/js/contact-form-script.js"></script>  
+    
+    <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
